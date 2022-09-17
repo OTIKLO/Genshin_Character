@@ -12,3 +12,39 @@
 <p>
   <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat-square&logo=Visual Studio Code&logoColor=white"/></a>
 </p>
+
+# 학습 내용
+
+## Reactjs VideoBG
+
+배경에 동영상 넣기
+
+```
+npm i -S reactjs-videobg
+```
+
+```java
+import VideoBg from "reactjs-videobg";
+//...
+    <VideoBg poster={bg4}>
+      <VideoBg.Source src={mp4} type="video/mp4" />
+    </VideoBg>
+```
+
+## React Audio Player
+
+리액트에서 음악플레이어 사용
+
+```
+npm install react-audio-player
+```
+
+```java
+import ReactAudioPlayer from "react-audio-player";
+//...
+    <ReactAudioPlayer
+        src= {maintheme}
+        autoPlay={true}
+        >
+    </ReactAudioPlayer>
+```
