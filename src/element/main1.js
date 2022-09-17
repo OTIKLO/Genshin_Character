@@ -9,7 +9,7 @@ function Page1(){
     const chosenBg = backgroundArr[bgIndex];
     document.body.style.backgroundImage = `url(${chosenBg})`;
     return(
-        <div>hello</div>
+        <div>FirstPage</div>
     )
 };
 

@@ -3,7 +3,7 @@ import "./main2.module.css";
 function Page2(){
     return(
         <div className="background">
-            Hello World
+            SecondPage
         </div>
     );
 };
