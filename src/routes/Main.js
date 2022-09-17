@@ -1,7 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import Dots from "../element/Dots.js";
 import "./Main.css";
+import Page1 from "../element/main1";
+import Page2 from "../element/main2";
+
+
 const DIVIDER_HEIGHT=5;
+
 
 
 function Main() {
@@ -103,9 +108,9 @@ function Main() {
   return (
     <div ref={outerDivRef} className="outer">
       <Dots scrollIndex={scrollIndex} />
-      <div className="inner bg1">1</div>
+      <div className="inner bg1"><Page1 /></div>
       <div className="divider"></div>
-      <div className="inner bg2">2</div>
+      <div className="inner bg2"><Page2 /></div>
       <div className="divider"></div>
       <div className="inner bg3">3</div>
       <div className="divider"></div>
