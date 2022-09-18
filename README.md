@@ -15,9 +15,32 @@
 
 # 학습 내용
 
-## Reactjs VideoBG
+## CSS 관련
 
-배경에 동영상 넣기
+### 애니메이션 ( transition )
+>속성을 서서히 변화시키는 속성  
+```css
+transition: property timing-function duration delay | initial | inherit
+```
+#### property : transition을 적용시킬 속성을 정합니다.  
++ none : 모든속성에 적용하지 않습니다.  
++ all : 모든속성에 적용합니다.  
++ property : 속성을 정합니다. 여러개일 경우 쉼표로 구분합니다. width, background-color ...  
++ initial : 기본값으로 설정합니다.  
++ inherit : 부모 요소의 속성값을 상속받습니다.  
+
+#### timing-function : transition의 진행 속도를 정합니다.  
+#### duration : transition의 총 시간을 정합니다.  
+#### delay : transition의 시작을 연기합니다.  
+#### initial : 기본값으로 설정합니다.  
+#### inherit : 부모 요소의 속성값을 상속받습니다.  
+
+
+## React 라이브러리
+
+### Reactjs VideoBG
+
++ 배경에 동영상 넣기
 
 ```
 npm i -S reactjs-videobg
@@ -31,9 +54,9 @@ import VideoBg from "reactjs-videobg";
     </VideoBg>
 ```
 
-## React Audio Player
+### React Audio Player
 
-리액트에서 음악플레이어 사용
++ 리액트에서 음악플레이어 사용
 
 ```
 npm install react-audio-player
