@@ -1,7 +1,10 @@
 body {
     margin: 0;
     overflow-y: hidden;
+    animation: fadein 5s ease 3s;
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
 }
+
 .outer {
     height: 100vh;
     overflow-y: auto;
