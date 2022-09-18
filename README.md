@@ -12,8 +12,26 @@
 <p>
   <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat-square&logo=Visual Studio Code&logoColor=white"/></a>
 </p>
-
+  
+<br>
+<br>
+  
 # 학습 내용
+
+## JAVASCRIPT 관련
+
+### 딜레이 (일정 시간 후 작동)
+```java
+setTimeout(() => {
+  {코드내용};
+}, `dlay 시킬 초`);
+```
+
+<br>
+
+---------------------
+
+<br>
 
 ## CSS 관련
 
@@ -35,6 +53,31 @@ transition: property timing-function duration delay | initial | inherit
 #### initial : 기본값으로 설정합니다.  
 #### inherit : 부모 요소의 속성값을 상속받습니다.  
 
+### 애니메이션 ( @keyframes, animation )
+
+```css
+@keyframes {이름} {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+```
++ animation-name: @keyframes 이름
++ animation-duration: 타임프레임 길이. 애니메이션 시작부터 마지막까지 총 지속시간
++ animation-timing-function: 애니메이션 속도 조절 ( linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier ).
++ animation-delay: 애니메이션이 시작하기 전 지연시간
++ animation-iteration-count: 반복 횟수
++ animation-direction: 루프 (loop) 방향. 정방향으로 반복, 역방향으로 반복, 번갈아가며 반복 등을 설정
++ animation-fill-mode: 애니메이션 시작/끝 상태 제어 ( none | forwards | backwards | both )
+
+<br>
+
+---------------------
+
+<br>
 
 ## React 라이브러리
 
