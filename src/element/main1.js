@@ -8,6 +8,7 @@ function Page1(){
     const bgIndex = Math.floor(Math.random()*backgroundArr.length);
     const chosenBg = backgroundArr[bgIndex];
     document.body.style.backgroundImage = `url(${chosenBg})`;
+    
     return(
         <div>FirstPage</div>
     )

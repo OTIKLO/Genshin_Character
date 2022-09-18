@@ -4,9 +4,7 @@ import "./Main.css";
 import Page1 from "../element/main1";
 import Page2 from "../element/main2";
 
-
 const DIVIDER_HEIGHT=5;
-
 
 
 function Main() {
