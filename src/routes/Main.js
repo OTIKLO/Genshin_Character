@@ -3,6 +3,7 @@ import Dots from "../element/Dots.js";
 import "./Main.css";
 import Page1 from "../element/main1";
 import Page2 from "../element/main2";
+import maintheme from "../music/g_main_theme.mp3";
 
 const DIVIDER_HEIGHT=5;
 
@@ -105,6 +106,9 @@ function Main() {
   }, []);
   return (
     <div ref={outerDivRef} className="outer">
+      <audio autoplay="autoplay" loop>
+                        <source src={maintheme} type="audio/mp3" />
+                    </audio>
       <Dots scrollIndex={scrollIndex} />
       <div className="inner bg1"><Page1 /></div>
       <div className="divider"></div>

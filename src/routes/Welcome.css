@@ -3,8 +3,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-.fadeindiv{
 	animation: fadein 5s ease 3s;
   	-webkit-animation: fadein 3s; /* Safari and Chrome */
 }
