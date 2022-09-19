@@ -7,7 +7,7 @@ import img1 from "../img/character/raiden.webp";
 import moff from "../img/icon/bgm_off.png";
 import mon from "../img/icon/bgm_on.png"
 import VideoBg from "reactjs-videobg";
-import mp4 from "../video/screen.mp4";
+import mp4 from "../video/GBG.mp4";
 
 const DIVIDER_HEIGHT = 5;
 

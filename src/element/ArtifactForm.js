@@ -42,8 +42,8 @@ function ArtifactForm() {
     };
 
     return (
-        <div>
-            <h1 style={{ fontSize: "40px", color: "rgb(45,00,45)" }}>성유물 점수 계산기</h1>
+        <div className="divstyle">
+            <h1 style={{ fontSize: "40px", color: "violet" }}>성유물 점수 계산기</h1>
             <div style={{ display: "grid", gridTemplateColumns: "1 1", justifyContent: "center" }}>
                 <p className="artifactP"> 공격력% ATK</p>
                 <input type='number' className="artifactI" name="afATK" step={0.01} onChange={handleInputChange} onKeyPress={handleInputChange} value={afinfo.afATK}/>
@@ -60,7 +60,7 @@ function ArtifactForm() {
                 <p className="artifactP" style={{color:"#FFCC66"}}> 방어력%</p>
                 <input type='number' style={{backgroundColor:"#FFCC66"}} className="artifactI" name="afDF" step={0.01} onChange={handleInputChange} onKeyPress={handleInputChange} value={afinfo.afDF}/>
             </div>
-            <input type='number' className="artifactI" style={{ marginTop: "20px" }} step={0.01} disabled value={result} />
+            <input type='number' className="artifactI" style={{ marginTop: "30px" }} step={0.01} disabled value={result} />
             <div><button type='button' className="resetbtn" onClick={handleReset}>초기화</button></div>
         </div>
     );
