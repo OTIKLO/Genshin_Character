@@ -28,25 +28,25 @@ body {
     background-color:transparent;
 }
 .leftright  {
-    transform: translateX(0%);
+    transform: translateX(100%);
     opacity: 0;
     transition: .8s;
     transition-duration: 1s;
   }
 .bg2 {
-    background-image: url("../img/bg/bg4.png");
+    background-image: url("../img/bg/bg1.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
   
 .leftright.active{
-    transform: translateX(35%);
+    transform: translateX(40%);
     transition-duration: 1s;
     opacity: 1;
   }
 .imgraiden {
     position:relative;
-    left:-22%;
+    left:-20%;
 }
 .mute{
     position:absolute;
@@ -57,18 +57,47 @@ body {
     cursor:pointer;
 }
 .AF{
-    width: 45%;
+    width: 35%;
     height: 80%;
     position:relative;
-    left:-5%;
-    background-color: aqua;
+    left:-3%;
+    background: linear-gradient(45deg, rgb(51, 4, 51), rgb(141, 42, 141), rgb(52, 17, 116));
     display:block;
     transition-duration: 1s;
     opacity: 0;
     text-align: center;
     font-size: 30px;
+    border-radius: 100px;
 }
 .AF.active {
     transition-duration: 3s;
-    opacity: 1;
+    opacity: 0.8;
+}
+.artifactP {
+    height:15px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -1px;
+    color:aliceblue;
+}
+.artifactI {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    text-align: center;
+}
+.resetbtn {
+    margin-top:40px;
+    background-color: rgb(71, 25, 71);
+    color:blanchedalmond;
+    border-color: violet;
+    font-size: 20px;
+    font-weight: 600;
+    width: 20%;
+    height: 20%;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

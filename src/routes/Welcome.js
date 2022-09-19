@@ -17,7 +17,7 @@ function Welcome() {
                     <VideoBg>
                         <VideoBg.Source src={mp4} type="video/mp4" className="vdbg" />
                     </VideoBg>
-                    <button onClick={handleClick} ></button>
+                    <button onClick={handleClick} className="buttongo"></button>
                     <img src={logo} className="logo" alt="img"></img>
                     <img src={touch} className="touch" alt="img" onClick={handleClick}></img>
                     <audio autoPlay="autoplay" loop>

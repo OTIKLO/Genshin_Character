@@ -2,10 +2,12 @@ import { useState, useEffect, useRef } from "react";
 import Dots from "../element/Dots.js";
 import ArtifactForm from "../element/ArtifactForm";
 import "./Main.css";
-import maintheme from "../music/g_main_theme.mp3";
+import maintheme from "../music/PhantasmSuite.mp3";
 import img1 from "../img/character/raiden.webp";
-import moff from "../img/icon/Dot_off.png";
-import mon from "../img/icon/Dot_on.png"
+import moff from "../img/icon/bgm_off.png";
+import mon from "../img/icon/bgm_on.png"
+import VideoBg from "reactjs-videobg";
+import mp4 from "../video/screen.mp4";
 
 const DIVIDER_HEIGHT = 5;
 
@@ -164,14 +166,16 @@ function Main() {
       <Dots scrollIndex={scrollIndex} />
       <img src={mbtn} alt="음소거이미지" className="mute" onClick={muteOnClick}></img>
       <div className="inner bg1">
-
+          <VideoBg>
+            <VideoBg.Source src={mp4} type="video/mp4" className="gbgbg" />
+          </VideoBg>
       </div>
       <div className="divider"></div>
       <div className="inner bg2">
-        <img src={img1} className="leftright imgraiden" alt="img"></img>
         <div className="AF">
           <ArtifactForm />
         </div>
+        <img src={img1} className="leftright imgraiden" alt="img"></img>
       </div>
       <div className="divider"></div>
       <div className="inner bg3">3</div>
