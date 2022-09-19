@@ -5,7 +5,6 @@ body {
     animation: fadein 5s ease 3s;
     -webkit-animation: fadein 3s; /* Safari and Chrome */
 }
-
 .outer {
     height: 100vh;
     overflow-y: auto;
@@ -16,6 +15,7 @@ body {
     transition-duration: 0.5s;
 }
 .inner {
+    width:100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -27,13 +27,47 @@ body {
     height: 5px;
     background-color:transparent;
 }
-.logoimg  {
-    transform: translateX(-50%);
+.leftright  {
+    transform: translateX(0%);
     opacity: 0;
     transition: .8s;
+    transition-duration: 1s;
   }
+.bg2 {
+    background-image: url("../img/bg/bg4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
   
-.logoimg.active{
-    transform: translateX(0);
+.leftright.active{
+    transform: translateX(35%);
+    transition-duration: 1s;
     opacity: 1;
   }
+.imgraiden {
+    position:relative;
+    left:-22%;
+}
+.mute{
+    position:absolute;
+    left:3%;
+    top: 2%;
+}
+.mute:hover{
+    cursor:pointer;
+}
+.AF{
+    width: 45%;
+    height: 80%;
+    position:relative;
+    left:-5%;
+    background-color: aqua;
+    display:block;
+    transition-duration: 1s;
+    opacity: 0;
+    text-align: center;
+}
+.AF.active {
+    transition-duration: 3s;
+    opacity: 1;
+}

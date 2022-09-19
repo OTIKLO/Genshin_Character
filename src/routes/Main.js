@@ -2,9 +2,11 @@ import { useState, useEffect, useRef } from "react";
 import Dots from "../element/Dots.js";
 import "./Main.css";
 import maintheme from "../music/g_main_theme.mp3";
-import logo from "../img/icon/genshinlogo.png";
+import img1 from "../img/character/raiden.webp";
+import moff from "../img/icon/Dot_off.png";
+import mon from "../img/icon/Dot_on.png"
 
-const DIVIDER_HEIGHT=5;
+const DIVIDER_HEIGHT = 5;
 
 function Main() {
   const outerDivRef = useRef();
@@ -102,15 +104,15 @@ function Main() {
       outerDivRefCurrent.removeEventListener("wheel", wheelHandler);
     };
   }, []);
+
   const options = {
     root: null, // viewport
     rootMargin: "0px",
     threshold: .5,  // 50%가 viewport에 들어와 있어야 callback 실행
   }
-  
+
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      console.log(entry.isIntersecting);
       if (entry.isIntersecting) {
         entry.target.classList.add("active");
       } else {
@@ -118,24 +120,57 @@ function Main() {
       }
     });
   }, options);
-  
-  const titleList = document.querySelectorAll('img, .logoimg');
-  //const aniimg = document.querySelector("#logoimg");
-  
+
+  const titleList = document.querySelectorAll('img');
+
   titleList.forEach(el => observer.observe(el));
 
+  const divList = document.querySelectorAll('div, .AF');
+
+  divList.forEach(el => observer.observe(el));
+
+  const [musics, setMusics] = useState(true);
+  let mbtn = mon;
+  function muteOnClick() {
+      const music = document.querySelector(".music");
+      const mute = document.querySelector(".mute");
+      if (musics === true) {
+        mute.src = moff;
+        setMusics(false);
+        music.volume = 0;
+        console.log("소리줄임");
+      } else {
+        mute.src = mon;
+        setMusics(true);
+        music.volume = 1;;
+        console.log("소리켬");
+      }
+  };
+  /*useEffect(()=>{
+    const chsrc = document.querySelector(".imgraiden");
+    const backgroundArr = [img1, logo, img1, logo];
+    const randomIndex = Math.floor(Math.random() * backgroundArr.length);
+    const backgroundImg = backgroundArr[randomIndex];
+    console.log(backgroundImg);
+    chsrc.src = (backgroundImg);
+  }, []);*/
+  
   return (
     <div ref={outerDivRef} className="outer">
-      <audio autoplay="autoplay" loop>
-                        <source src={maintheme} type="audio/mp3" />
-                    </audio>
+      <audio autoPlay="autoplay" loop className="music">
+        <source src={maintheme} type="audio/mp3" />
+      </audio>
       <Dots scrollIndex={scrollIndex} />
-      <div className="inner bg1" style={{background:"red" }}>
-       
+      <img src={mbtn} alt="음소거이미지" className="mute" onClick={muteOnClick}></img>
+      <div className="inner bg1">
+
       </div>
       <div className="divider"></div>
-      <div className="inner bg2" style={{background:"red" }}>
-          <img src={logo} class="logoimg" alt="img"></img>
+      <div className="inner bg2">
+        <img src={img1} className="leftright imgraiden" alt="img"></img>
+        <div className="AF">
+          <input type={"text"} placeholder="입력"></input>
+        </div>
       </div>
       <div className="divider"></div>
       <div className="inner bg3">3</div>

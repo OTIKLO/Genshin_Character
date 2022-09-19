@@ -20,7 +20,7 @@ function Welcome() {
                     <button onClick={handleClick} ></button>
                     <img src={logo} className="logo" alt="img"></img>
                     <img src={touch} className="touch" alt="img" onClick={handleClick}></img>
-                    <audio autoplay="autoplay" loop>
+                    <audio autoPlay="autoplay" loop>
                         <source src={maintheme} type="audio/mp3" />
                     </audio>
                 </div> 
