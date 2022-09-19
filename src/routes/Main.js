@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Dots from "../element/Dots.js";
+import ArtifactForm from "../element/ArtifactForm";
 import "./Main.css";
 import maintheme from "../music/g_main_theme.mp3";
 import img1 from "../img/character/raiden.webp";
@@ -169,7 +170,7 @@ function Main() {
       <div className="inner bg2">
         <img src={img1} className="leftright imgraiden" alt="img"></img>
         <div className="AF">
-          <input type={"text"} placeholder="입력"></input>
+          <ArtifactForm />
         </div>
       </div>
       <div className="divider"></div>

@@ -66,6 +66,7 @@ body {
     transition-duration: 1s;
     opacity: 0;
     text-align: center;
+    font-size: 30px;
 }
 .AF.active {
     transition-duration: 3s;
