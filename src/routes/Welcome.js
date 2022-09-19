@@ -1,4 +1,5 @@
 import "./Welcome.css";
+import Bird from "../element/Bird";
 import VideoBg from "reactjs-videobg";
 import mp4 from "../video/screen.mp4";
 import logo from "../img/icon/genshinlogo.png";
@@ -24,22 +25,7 @@ function Welcome() {
                     </audio>
                 </div> 
             </div>
-            
-            <div class="bird-container bird-container--one">
-                <div class="bird bird one"></div>
-            </div>
-
-            <div class="bird-container bird-container--two">
-                <div class="bird bird two"></div>
-            </div>
-
-            <div class="bird-container bird-container--three">
-                <div class="bird bird three"></div>
-            </div>
-
-            <div class="bird-container bird-container--four">
-                <div class="bird bird four"></div>
-            </div>
+            <Bird />
         </div>
     );
 };

@@ -8,7 +8,7 @@ function Startloading() {
     });
     return (
         <div className="fadeindiv">
-            <img src={loadingbg} alt="로딩에 실패했습니다."></img>
+            <img src={loadingbg} alt="로딩에 실패했습니다."style={{width:"100vw", height:"100vh", objectFit: "cover"}}></img>
         </div>
     );
 }

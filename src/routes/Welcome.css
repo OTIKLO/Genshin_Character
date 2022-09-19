@@ -92,7 +92,7 @@ h1 {
 	
     animation-name: fly-cycle;
 	animation-duration: 1s;
-	animation-delay: -0.5s;
+	animation-delay: -2s;
 	animation-timing-function: steps(10);
 	animation-iteration-count: infinite;
 }
@@ -121,7 +121,7 @@ h1 {
 
 .bird-container {
 	position: absolute;
-	top: 7%;
+	top: 1%;
 	left: -10%;
 	transform: scale(0) translateX(-10vw);
 	will-change: transform;
@@ -129,6 +129,7 @@ h1 {
 	animation-name: fly-right-one;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
+	animation-delay: 6s;
 }
 .bird-container--one {
 	animation-duration: 9s;
@@ -142,13 +143,13 @@ h1 {
 }
 	
 .bird-container--three {
-	top: 3%;
+	top: 10%;
 	animation-duration: 9s;
 	animation-delay: 9.5s;
 }
 	
 .bird-container--four {
-	top: 10%;
+	top: 15%;
 	animation-duration: 16s;
 	animation-delay: 10.25s;
 }

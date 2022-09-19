@@ -1,12 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import Dots from "../element/Dots.js";
 import "./Main.css";
-import Page1 from "../element/main1";
-import Page2 from "../element/main2";
 import maintheme from "../music/g_main_theme.mp3";
+import logo from "../img/icon/genshinlogo.png";
 
 const DIVIDER_HEIGHT=5;
-
 
 function Main() {
   const outerDivRef = useRef();
@@ -104,15 +102,41 @@ function Main() {
       outerDivRefCurrent.removeEventListener("wheel", wheelHandler);
     };
   }, []);
+  const options = {
+    root: null, // viewport
+    rootMargin: "0px",
+    threshold: .5,  // 50%가 viewport에 들어와 있어야 callback 실행
+  }
+  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      console.log(entry.isIntersecting);
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      } else {
+        entry.target.classList.remove("active");
+      }
+    });
+  }, options);
+  
+  const titleList = document.querySelectorAll('img, .logoimg');
+  //const aniimg = document.querySelector("#logoimg");
+  
+  titleList.forEach(el => observer.observe(el));
+
   return (
     <div ref={outerDivRef} className="outer">
       <audio autoplay="autoplay" loop>
                         <source src={maintheme} type="audio/mp3" />
                     </audio>
       <Dots scrollIndex={scrollIndex} />
-      <div className="inner bg1"><Page1 /></div>
+      <div className="inner bg1" style={{background:"red" }}>
+       
+      </div>
       <div className="divider"></div>
-      <div className="inner bg2"><Page2 /></div>
+      <div className="inner bg2" style={{background:"red" }}>
+          <img src={logo} class="logoimg" alt="img"></img>
+      </div>
       <div className="divider"></div>
       <div className="inner bg3">3</div>
       <div className="divider"></div>
