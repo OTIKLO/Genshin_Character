@@ -60,8 +60,10 @@ function ArtifactForm() {
                 <p className="artifactP" style={{color:"#FFCC66"}}> 방어력%</p>
                 <input type='number' style={{backgroundColor:"#FFCC66"}} className="artifactI" name="afDF" step={0.01} onChange={handleInputChange} onKeyPress={handleInputChange} value={afinfo.afDF}/>
             </div>
-            <input type='number' className="artifactI" style={{ marginTop: "30px" }} step={0.01} disabled value={result} />
+            <input type='number' className="artifactI" style={{ marginTop: "30px", backgroundColor: "white" }} step={0.01} disabled value={result}/>
             <div><button type='button' className="resetbtn" onClick={handleReset}>초기화</button></div>
+            <p className="artifactP" style={{marginTop:"20px"}}>깃털 & 꽃: 60점 이상 | 시계 & 성배 & 왕관: 50점 이상</p>
+            <p className="artifactP" style={{marginTop:"10px", fontSize: 15}}>원소충전효율, 원소마스터리, 체력, 방어력은 유효옵 캐릭터에만 계산</p>
         </div>
     );
 }

@@ -42,6 +42,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .leftright  {
     transform: translateX(60%);
     opacity: 0;
@@ -57,6 +58,7 @@ body {
     position:relative;
     left:-20%;
 }
+/* 음소거 */
 .mute{
     position:absolute;
     left:3%;
@@ -65,6 +67,7 @@ body {
 .mute:hover{
     cursor:pointer;
 }
+/* ArtifactForm css*/
 .AF{
     width: 100%;
     height: 80%;
@@ -108,3 +111,38 @@ input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+/* CharacterCal css*/
+.CCdiv {
+    width:85%;
+    height:85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+.CCLeftdiv{
+    width:100%;
+    height:850px;
+    display:grid;
+    grid-template-columns: 1;
+    grid-template-rows: 10% 90%;
+}
+.CCRightdiv{
+    width:50%;
+    height:850px;
+    display:grid;
+    grid-template-rows: 20% 80%;
+}
+.CCimg  {
+    max-width:100%;
+    max-height:100%;
+    transform: translateX(-40%);
+    opacity: 0;
+    transition: .8s;
+    transition-duration: 1s;
+  }
+.CCimg.active{
+    transform: translateX(0%);
+    transition-duration: 1s;
+    opacity: 1;
+  }

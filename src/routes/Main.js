@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Dots from "../element/Dots.js";
 import ArtifactForm from "../element/ArtifactForm";
+import CharacterCal from "../element/CharacterCal";
 import "./Main.css";
 import maintheme from "../music/PhantasmSuite.mp3";
 import img1 from "../img/character/raiden.webp";
@@ -178,7 +179,9 @@ function Main() {
         <img src={img1} className="leftright imgraiden" alt="img"></img>
       </div>
       <div className="divider"></div>
-      <div className="inner bg3">3</div>
+      <div className="inner bg3">
+          <CharacterCal />
+      </div>
       <div className="divider"></div>
       <div className="inner bg4">4</div>
     </div>
