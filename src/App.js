@@ -13,12 +13,8 @@ function App() {
   <Router>
     <Routes>
       <Route path="/" element={<Startloading />} />
-    </Routes>
-    <Routes>
-      <Route path="/welcome" element={<Welcome />} />
-    </Routes>
-    <Routes>
-      <Route path="/main" element={<Main />} />
+      <Route path="/Welcome" element={<Welcome />} />
+      <Route path="/Main" element={<Main />} />
     </Routes>
   </Router>
   

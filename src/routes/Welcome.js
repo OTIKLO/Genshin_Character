@@ -8,7 +8,7 @@ import maintheme from "../music/g_main_theme.mp3";
 
 function Welcome() {
     function handleClick(e) {
-        window.location.href = "/main";
+        window.location.href = "/Main";
     };
     return (
         <div className="fadeindiv">
