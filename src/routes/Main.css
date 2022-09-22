@@ -166,14 +166,17 @@ input[type="number"]::-webkit-inner-spin-button {
     opacity: 1;
 }
 .CCLevels {
+    max-width: 80%;
     margin-top: 20px;
+    margin-left: 20px;
     display:grid;
     text-align: center;
     place-items: center;
-    grid-template-columns: 40% 10% 20% 5% 20%;
+    grid-template-columns: 40% 10% 30% 5% 30%;
 }
 .CCLevelup {
-    display:flex;
+    max-width: 80%;
+    display: flex;
 }
 .cclevel {
     width: 40%;
@@ -188,11 +191,11 @@ input[type="number"]::-webkit-inner-spin-button {
     color:azure;
 }
 .cccimg {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 .levelupP{
-    margin-top: -20px;
+    margin-top: -10px;
     text-align: center;
     font-size: 20px;
     font-weight: 600;
