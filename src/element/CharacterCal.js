@@ -908,17 +908,17 @@ function CharacterCal() {
             }
             setLevel({ ...level, [e.target.name]: parseFloat(e.target.value) });
             calculator(level.startlevel, level.endlevel);
-                nmora = emora - smora;
-                nexp = eexp - sexp;
-                nga = ega - sga;
-                nboss = eboss - sboss;
-                nstuff1 = estuff1 - sstuff1;
-                nstuff2 = estuff2 - sstuff2;
-                nstuff3 = estuff3 - sstuff3;
-                ngem1 = egem1 - sgem1;
-                ngem2 = egem2 - sgem2;
-                ngem3 = egem3 - sgem3;
-                ngem4 = egem4 - sgem4;
+            nmora = emora - smora;
+            nexp = eexp - sexp;
+            nga = ega - sga;
+            nboss = eboss - sboss;
+            nstuff1 = estuff1 - sstuff1;
+            nstuff2 = estuff2 - sstuff2;
+            nstuff3 = estuff3 - sstuff3;
+            ngem1 = egem1 - sgem1;
+            ngem2 = egem2 - sgem2;
+            ngem3 = egem3 - sgem3;
+            ngem4 = egem4 - sgem4;
         }
     };
 
@@ -928,8 +928,8 @@ function CharacterCal() {
                 <img src={art} className="CCimg" alt="img"></img>
             </div>
             <div className="CCRightdiv">
-                <div className="CCLevels">
-                    <select id="Char" onchange="SetCharL()">
+                <div>
+                    <select id="Char" onchange="SetCharL()" className="ccselect">
                         <optgroup label="바람">
                             <option>벤티</option>
                             <option>진</option>
@@ -943,7 +943,7 @@ function CharacterCal() {
                             <option>타르탈리아</option>
                             <option>모나</option>
                             <option>행추</option>
-                            <option>바바라</option>
+                            <option selected>바바라</option>
                             <option>산고노미야 코코미</option>
                             <option>카미사토 아야토</option>
                             <option>야란</option>
@@ -995,6 +995,8 @@ function CharacterCal() {
                             <option>운근</option>
                         </optgroup>
                     </select>
+                </div>
+                <div className="CCLevels">
                     <p className="cccP">레벨: </p>
                     <input type='number' className="cclevel" name="startlevel" onChange={handleInputChange1} onKeyPress={handleInputChange1} value={level.startlevel} />
                     <p className="cccP"> - </p>
@@ -1049,11 +1051,6 @@ function CharacterCal() {
                         <img src={stuff3} className="cccimg" alt="불러오기 오류"></img>
                         <p className="levelupP">{nstuff3}</p>
                     </div>
-                <div>
-                </div>
-                </div>
-                <div>
-
                 </div>
             </div>
         </div>
