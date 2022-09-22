@@ -136,6 +136,12 @@ input[type="number"]::-webkit-inner-spin-button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
+    opacity: 0;
+    transition-duration: 1s;
+}
+.CCdiv.active {
+    transition-duration: 1s;
+    opacity: 1;
 }
 
 .CCLeftdiv {

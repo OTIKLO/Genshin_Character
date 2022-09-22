@@ -1,5 +1,6 @@
 import babaraart from "./cc/babara/babara_art.png";
 import mora from "./icon/mora.png";
+import expbook from "./icon/expbook.webp";
 import { useState } from "react";
 import g_ph from "./icon/gathering/Philanemo.png";
 import b_w from "./icon/boss/boss_water1.png";
@@ -883,10 +884,22 @@ function CharacterCal() {
         endlevel: 90,
     });
     const handleInputChange1 = (e) => {
-        if (e.target.value >= 1 && e.target.value <= 90) {
-            if (e.target.value < level.endlevel) {
-                setLevel({ ...level, [e.target.name]: parseInt(e.target.value) });
-                calculator(level.startlevel, level.endlevel);
+        if (e.target.value >= 0 && e.target.value <= 90) {
+            setLevel({ ...level, [e.target.name]: parseInt(e.target.value) });
+            calculator(level.startlevel, level.endlevel);
+            if (level.endlevel < level.startlevel) {
+                nmora = 0;
+                nexp = 0;
+                nga = 0;
+                nboss = 0;
+                nstuff1 = 0;
+                nstuff2 = 0;
+                nstuff3 = 0;
+                ngem1 = 0;
+                ngem2 = 0;
+                ngem3 = 0;
+                ngem4 = 0;
+            } else {
                 nmora = emora - smora;
                 nexp = eexp - sexp;
                 nga = ega - sga;
@@ -902,23 +915,34 @@ function CharacterCal() {
         }
     };
     const handleInputChange2 = (e) => {
-        if (e.target.value >= 1 && e.target.value <= 90) {
-            if (e.target.value < level.startlevel) {
-                e.target.value = level.startlevel;
-            }
+        if (e.target.value >= 0 && e.target.value <= 90) {
             setLevel({ ...level, [e.target.name]: parseFloat(e.target.value) });
             calculator(level.startlevel, level.endlevel);
-            nmora = emora - smora;
-            nexp = eexp - sexp;
-            nga = ega - sga;
-            nboss = eboss - sboss;
-            nstuff1 = estuff1 - sstuff1;
-            nstuff2 = estuff2 - sstuff2;
-            nstuff3 = estuff3 - sstuff3;
-            ngem1 = egem1 - sgem1;
-            ngem2 = egem2 - sgem2;
-            ngem3 = egem3 - sgem3;
-            ngem4 = egem4 - sgem4;
+            if (level.endlevel < level.startlevel) {
+                nmora = 0;
+                nexp = 0;
+                nga = 0;
+                nboss = 0;
+                nstuff1 = 0;
+                nstuff2 = 0;
+                nstuff3 = 0;
+                ngem1 = 0;
+                ngem2 = 0;
+                ngem3 = 0;
+                ngem4 = 0;
+            } else {
+                nmora = emora - smora;
+                nexp = eexp - sexp;
+                nga = ega - sga;
+                nboss = eboss - sboss;
+                nstuff1 = estuff1 - sstuff1;
+                nstuff2 = estuff2 - sstuff2;
+                nstuff3 = estuff3 - sstuff3;
+                ngem1 = egem1 - sgem1;
+                ngem2 = egem2 - sgem2;
+                ngem3 = egem3 - sgem3;
+                ngem4 = egem4 - sgem4;
+            }
         }
     };
 
@@ -934,10 +958,10 @@ function CharacterCal() {
                             <option>벤티</option>
                             <option>진</option>
                             <option>소</option>
-                            <option>바람행자</option>
                             <option>설탕</option>
                             <option>카에데하라 카즈하</option>
                             <option>사유</option>
+                            <option>시카노인 헤이조</option>
                         </optgroup>
                         <optgroup label="물">
                             <option>타르탈리아</option>
@@ -947,6 +971,8 @@ function CharacterCal() {
                             <option>산고노미야 코코미</option>
                             <option>카미사토 아야토</option>
                             <option>야란</option>
+                            <option>닐루</option>
+                            <option>캔디스</option>
                         </optgroup>
                         <optgroup label="불">
                             <option>다이루크</option>
@@ -975,7 +1001,6 @@ function CharacterCal() {
                         <optgroup label="번개">
                             <option>각청</option>
                             <option>피슬</option>
-                            <option>번행자</option>
                             <option>북두</option>
                             <option>레이저</option>
                             <option>리사</option>
@@ -983,16 +1008,21 @@ function CharacterCal() {
                             <option>쿠죠 사라</option>
                             <option>야에 미코</option>
                             <option>쿠키 시노부</option>
+                            <option>도리</option>
+                            <option>사이노</option>
                         </optgroup>
                         <optgroup label="바위">
                             <option>종려</option>
                             <option>알베도</option>
-                            <option>바위행자</option>
                             <option>응광</option>
                             <option>노엘</option>
                             <option>아라타키 이토</option>
                             <option>고로</option>
                             <option>운근</option>
+                        </optgroup>
+                        <optgroup label="풀">
+                            <option>타이나리</option>
+                            <option>콜레이</option>
                         </optgroup>
                     </select>
                 </div>
@@ -1008,7 +1038,7 @@ function CharacterCal() {
                         <p className="levelupP">{nmora}</p>
                     </div>
                     <div>
-                        <img src={mora} className="cccimg" alt="불러오기 오류"></img>
+                        <img src={expbook} className="cccimg" alt="불러오기 오류"></img>
                         <p className="levelupP">{nexp}</p>
                     </div>
                     <div>
