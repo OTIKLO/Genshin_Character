@@ -43,8 +43,8 @@ function ArtifactForm() {
 
     return (
         <div className="divstyle">
-            <h1 style={{ fontSize: "40px", color: "violet" }}>성유물 점수 계산기</h1>
-            <div style={{ display: "grid", gridTemplateColumns: "1 1", justifyContent: "center" }}>
+            <h1 style={{ marginTop:"-11px", fontSize: "40px", color: "violet" }}>성유물 점수 계산기</h1>
+            <div style={{ marginTop: "-20px", display: "grid", gridTemplateColumns: "1 1", justifyContent: "center" }}>
                 <p className="artifactP"> 공격력% ATK</p>
                 <input type='number' className="artifactI" name="afATK" step={0.01} onChange={handleInputChange} onKeyPress={handleInputChange} value={afinfo.afATK}/>
                 <p className="artifactP"> 치명타 확률% CRC</p>
@@ -62,7 +62,7 @@ function ArtifactForm() {
             </div>
             <input type='number' className="artifactI" style={{ marginTop: "30px", backgroundColor: "white" }} step={0.01} disabled value={result}/>
             <div><button type='button' className="resetbtn" onClick={handleReset}>초기화</button></div>
-            <p className="artifactP" style={{marginTop:"20px"}}>깃털 & 꽃: 60점 이상 | 시계 & 성배 & 왕관: 50점 이상</p>
+            <p className="artifactP" style={{marginTop:"10px"}}>깃털 & 꽃: 60점 이상 | 시계 & 성배 & 왕관: 50점 이상</p>
             <p className="artifactP" style={{marginTop:"10px", fontSize: 15}}>원소충전효율, 원소마스터리, 체력, 방어력은 유효옵 캐릭터에만 계산</p>
         </div>
     );
