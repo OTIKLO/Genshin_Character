@@ -1,28 +1,47 @@
-import babaraart from "./cc/babara/babara_art.png";
 import mora from "./icon/mora.png";
 import expbook from "./icon/expbook.webp";
 import { useState } from "react";
+//캐릭터
+import babaraart from "./cc/babara/babara_art.png";
+import venti from "./cc/babara/venti.png";
+
+//채집재료
 import g_ph from "./icon/gathering/Philanemo.png";
-import b_w from "./icon/boss/boss_water1.png";
+import g_ce from "./icon/gathering/Cecilia.png";
+
+//보스
+import b_wa from "./icon/boss/boss_water1.png";
+import b_wc from "./icon/boss/boss_windcube.png";
+
+//재료
 import scroll1 from "./icon/stuff/Scroll1.png";
 import scroll2 from "./icon/stuff/Scroll2.png";
 import scroll3 from "./icon/stuff/Scroll3.png";
+import slime1 from "./icon/stuff/slime1.png";
+import slime2 from "./icon/stuff/slime2.png";
+import slime3 from "./icon/stuff/slime3.png";
+
+//보석
 import water1 from "./icon/gem/water1.png";
 import water2 from "./icon/gem/water2.png";
 import water3 from "./icon/gem/water3.png";
 import water4 from "./icon/gem/water4.png";
+import wind1 from "./icon/gem/wind1.png";
+import wind2 from "./icon/gem/wind2.png";
+import wind3 from "./icon/gem/wind3.png";
+import wind4 from "./icon/gem/wind4.png";
 
 // 사진 관련
-const art = babaraart;
-const gathering = g_ph;
-const boss = b_w;
-const stuff1 = scroll1;
-const stuff2 = scroll2;
-const stuff3 = scroll3;
-const gem1 = water1;
-const gem2 = water2;
-const gem3 = water3;
-const gem4 = water4;
+let art = babaraart;
+let gathering = g_ph;
+let boss = b_wa;
+let stuff1 = scroll1;
+let stuff2 = scroll2;
+let stuff3 = scroll3;
+let gem1 = water1;
+let gem2 = water2;
+let gem3 = water3;
+let gem4 = water4;
 
 // 수치 관련
 let nmora = 0;
@@ -876,13 +895,52 @@ function calculator(slv, elv) {
         e81_90();
     };
 
-}
+};
 
+function gem_water() {
+    gem1 = water1;
+    gem2 = water2;
+    gem3 = water3;
+    gem4 = water4;
+};
+function gem_wind() {
+    gem1 = wind1;
+    gem2 = wind2;
+    gem3 = wind3;
+    gem4 = wind4;
+};
+function charchange(character){
+    console.log(character);
+    if (character === "바바라") {
+        art = babaraart;
+        gathering = g_ph;
+        boss = b_wa;
+        stuff1 = scroll1;
+        stuff2 = scroll2;
+        stuff3 = scroll3;
+        gem_water();
+    } else if (character === "벤티") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    }
+}
 function CharacterCal() {
     const [level, setLevel] = useState({
         startlevel: 1,
         endlevel: 90,
     });
+    const [character, setCharacter] = useState("바바라");
+    const handleSelectChange = (e) => {
+        if(1===1){
+            setCharacter(e.target.value);
+        }
+        charchange(character);
+    };
     const handleInputChange1 = (e) => {
         if (e.target.value >= 0 && e.target.value <= 90) {
             setLevel({ ...level, [e.target.name]: parseInt(e.target.value) });
@@ -953,9 +1011,9 @@ function CharacterCal() {
             </div>
             <div className="CCRightdiv">
                 <div>
-                    <select id="Char" onchange="SetCharL()" className="ccselect">
+                    <select id="Char" onChange={handleSelectChange} value={character} className="ccselect">
                         <optgroup label="바람">
-                            <option>벤티</option>
+                            <option value="벤티">벤티</option>
                             <option>진</option>
                             <option>소</option>
                             <option>설탕</option>
@@ -967,7 +1025,7 @@ function CharacterCal() {
                             <option>타르탈리아</option>
                             <option>모나</option>
                             <option>행추</option>
-                            <option selected>바바라</option>
+                            <option value="바바라">바바라</option>
                             <option>산고노미야 코코미</option>
                             <option>카미사토 아야토</option>
                             <option>야란</option>
@@ -1025,6 +1083,7 @@ function CharacterCal() {
                             <option>콜레이</option>
                         </optgroup>
                     </select>
+                    <button className="ccSelectbtn">선택</button>
                 </div>
                 <div className="CCLevels">
                     <p className="cccP">레벨: </p>
