@@ -21,14 +21,14 @@
 ## JAVASCRIPT 관련
 
 ### 딜레이 (일정 시간 후 작동)
-```java
+```javascript
 setTimeout(() => {
   {코드내용};
 }, `dlay 시킬 초`);
 ```
 
 ### 버튼 클릭으로 페이지 이동
-```java
+```javascript
 function handleClick(e) {
   window.location.href = "/{페이지}";
 };
@@ -111,7 +111,7 @@ transition: property timing-function duration delay | initial | inherit
 npm i -S reactjs-videobg
 ```
 
-```java
+```javascript
 import VideoBg from "reactjs-videobg";
 //...
     <VideoBg poster={bg4}>
@@ -127,7 +127,7 @@ import VideoBg from "reactjs-videobg";
 npm install react-audio-player
 ```
 
-```java
+```javascript
 import ReactAudioPlayer from "react-audio-player";
 //...
     <ReactAudioPlayer
@@ -135,4 +135,153 @@ import ReactAudioPlayer from "react-audio-player";
         autoPlay={true}
         >
     </ReactAudioPlayer>
+```
+
+<br>
+
+------------------------
+
+<br>
+
+# 핵심 코드
+
+### 스크롤 페이징
+
+```javascript
+const DIVIDER_HEIGHT = 5;
+...
+function Main(){
+  const outerDivRef = useRef();
+  const [scrollIndex, setScrollIndex] = useState(1);
+  useEffect(() => {
+    const wheelHandler = (e) => {
+      e.preventDefault();
+      const { deltaY } = e;
+      const { scrollTop } = outerDivRef.current; // 스크롤 위쪽 끝부분 위치
+      const pageHeight = window.innerHeight; // 화면 세로길이, 100vh와 같습니다.
+
+      if (deltaY > 0) {   // 스크롤 내릴 때
+        if (scrollTop >= 0 && scrollTop < pageHeight) {   //현재 1페이지
+          console.log("현재 1페이지, down");
+          outerDivRef.current.scrollTo({
+            top: pageHeight + DIVIDER_HEIGHT,
+            left: 0,
+            behavior: "smooth",
+          });
+          setScrollIndex(2);
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 2) {   //현재 2페이지
+          console.log("현재 2페이지, down");
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 2 + DIVIDER_HEIGHT * 2,
+            left: 0,
+            behavior: "smooth",
+          });
+          setScrollIndex(3);
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 3) {   // 현재 3페이지
+          console.log("현재 3페이지, down");
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 3 + DIVIDER_HEIGHT * 3,
+            left: 0,
+            behavior: "smooth",
+          });
+          setScrollIndex(4);
+        } else {    // 현재 4페이지
+          console.log("현재 4페이지, down");
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 4 + DIVIDER_HEIGHT * 4,
+            left: 0,
+            behavior: "smooth",
+          });
+          setScrollIndex(4);
+        }
+      } else {    // 스크롤 올릴 때
+        if (scrollTop >= 0 && scrollTop < pageHeight) {   //현재 1페이지
+          console.log("현재 1페이지, up");
+          outerDivRef.current.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
+          setScrollIndex(1);
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 2) {   //현재 2페이지
+          console.log("현재 2페이지, up");
+          outerDivRef.current.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
+          setScrollIndex(1);
+        } else if (scrollTop >= pageHeight * 2 && scrollTop < pageHeight * 3) {   // 현재 3페이지
+          console.log("현재 3페이지, up");
+          outerDivRef.current.scrollTo({
+            top: pageHeight + DIVIDER_HEIGHT,
+            left: 0,
+            behavior: "smooth",
+          });
+          setScrollIndex(2);
+        } else {    // 현재 4페이지
+          console.log("현재 4페이지, up");
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 2 + DIVIDER_HEIGHT * 2,
+            left: 0,
+            behavior: "smooth",
+          });
+          setScrollIndex(3);
+        }
+      }
+    };
+    const outerDivRefCurrent = outerDivRef.current;
+    outerDivRefCurrent.addEventListener("wheel", wheelHandler);
+    return () => {
+      outerDivRefCurrent.removeEventListener("wheel", wheelHandler);
+    };
+  }, []);
+...
+}
+```
+
+### 페이지를 볼 때 애니메이션 작동
+
+```javascript
+  const options = {
+    root: null, // viewport
+    rootMargin: "0px",
+    threshold: .5,  // 50%가 viewport에 들어와 있어야 callback 실행
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      } else {
+        entry.target.classList.remove("active");
+      }
+    });
+  }, options);
+
+  const titleList = document.querySelectorAll('img');
+
+  titleList.forEach(el => observer.observe(el));
+
+  const divList = document.querySelectorAll('div, .AF');
+
+  divList.forEach(el => observer.observe(el));
+
+  const [musics, setMusics] = useState(true);
+  let mbtn = mon;
+  function muteOnClick() {
+      const music = document.querySelector(".music");
+      const mute = document.querySelector(".mute");
+      if (musics === true) {
+        mute.src = moff;
+        setMusics(false);
+        music.volume = 0;
+        console.log("소리줄임");
+      } else {
+        mute.src = mon;
+        setMusics(true);
+        music.volume = 1;;
+        console.log("소리켬");
+      }
+  };
 ```
