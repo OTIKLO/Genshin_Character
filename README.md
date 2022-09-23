@@ -145,7 +145,7 @@ import ReactAudioPlayer from "react-audio-player";
 
 # 핵심 코드
 
-### 스크롤 페이징
+### 1. 스크롤 페이징
 
 ```javascript
 const DIVIDER_HEIGHT = 5;
@@ -239,7 +239,7 @@ function Main(){
 ...
 }
 ```
-### 스크롤 페이지 점 표시 -> 이미지 표시
+### 1-1. 스크롤 페이지 점 표시 -> 이미지 표시
 
 ```javascript
   <Dots scrollIndex={scrollIndex} />
@@ -293,7 +293,7 @@ export default Dots;
 ```
 
 
-### 페이지를 볼 때 애니메이션 작동
+### 2. 페이지를 볼 때 애니메이션 작동
 
 ```javascript
   const options = {
@@ -342,7 +342,7 @@ export default Dots;
   </div>
 ```
 
-### 배경 소리 음소거
+### 3. 배경 소리 음소거
 
 ```javascript
 const [musics, setMusics] = useState(true);
@@ -362,4 +362,194 @@ const [musics, setMusics] = useState(true);
         console.log("소리켬");
       }
   };
+```
+
+### 4. Bird 애니메이션
+
+```javascript
+function Bird(){
+    return (
+        <div>
+            <div className="bird-container bird-container--one">
+                <div className="bird bird one"></div>
+            </div>
+
+            <div className="bird-container bird-container--two">
+                <div className="bird bird two"></div>
+            </div>
+
+            <div className="bird-container bird-container--three">
+                <div className="bird bird three"></div>
+            </div>
+
+            <div className="bird-container bird-container--four">
+                <div className="bird bird four"></div>
+            </div>
+        </div>
+    );
+};
+
+export default Bird;
+```
+
+```html
+
+@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
+}
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.container {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	min-height: 35rem;
+	background-image: linear-gradient(to bottom,  rgba(255,168,76,0.6) 0%,rgba(255,123,13,0.6) 100%), url('https://images.unsplash.com/photo-1446824505046-e43605ffb17f');
+	background-blend-mode: soft-light;
+	background-size: cover;
+	background-position: center center;
+	padding: 2rem;
+}
+
+.bird {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+	background-size: auto 100%;
+	width: 88px;
+	height: 125px;
+	will-change: background-position;
+	
+    animation-name: fly-cycle;
+	animation-duration: 1s;
+	animation-delay: -2s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+}
+
+.bird-container--one {
+	animation-duration: 1s;
+	animation-delay: -0.5s;		
+}
+	
+.bird-container--two {
+	animation-duration: 0.9s;
+	animation-delay: -0.75s;
+}
+	
+.bird-container--three {
+	animation-duration: 1.25s;
+	animation-delay: -0.25s;
+}
+	
+.bird-container--four {
+	animation-duration: 1.1s;
+	animation-delay: -0.5s;
+}
+
+
+
+.bird-container {
+	position: absolute;
+	top: 1%;
+	left: -10%;
+	transform: scale(0) translateX(-10vw);
+	will-change: transform;
+	
+	animation-name: fly-right-one;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-delay: 6s;
+}
+.bird-container--one {
+	animation-duration: 9s;
+	animation-delay: 0;
+}
+
+.bird-container--two {
+	top: 5%;
+	animation-duration: 8s;
+	animation-delay: 1s;
+}
+	
+.bird-container--three {
+	top: 10%;
+	animation-duration: 9s;
+	animation-delay: 9.5s;
+}
+	
+.bird-container--four {
+	top: 15%;
+	animation-duration: 16s;
+	animation-delay: 10.25s;
+}
+
+@keyframes fly-cycle {
+	100% {
+		background-position: -900px 0;
+	}
+}
+
+@keyframes fly-right-one {
+	0% {
+		transform: scale(0.3) translateX(-10vw);
+	}
+	10% {
+		transform: translateY(2vh) translateX(10vw) scale(0.4);
+	}
+	20% {
+		transform: translateY(0vh) translateX(30vw) scale(0.5);
+	}
+	30% {
+		transform: translateY(4vh) translateX(50vw) scale(0.6);
+	}
+	40% {
+		transform: translateY(2vh) translateX(70vw) scale(0.6);
+	}
+	50% {
+		transform: translateY(0vh) translateX(90vw) scale(0.6);
+	}
+	60% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+	100% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+}
+
+@keyframes fly-right-two {
+	0% {
+		transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+	}
+	10% {
+		transform: translateY(0vh) translateX(10vw) scale(0.4);
+	}
+	20% {
+		transform: translateY(-4vh) translateX(30vw) scale(0.6);
+	}
+	30% {
+		transform: translateY(1vh) translateX(50vw) scale(0.45);
+	}
+	40% {
+		transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+	}
+	50% {
+		transform: translateY(0vh) translateX(90vw) scale(0.45);
+	}
+	51% {
+		transform: translateY(0vh) translateX(110vw) scale(0.45);
+	}
+	100% {
+		transform: translateY(0vh) translateX(110vw) scale(0.45);
+	}
+}
 ```
