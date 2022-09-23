@@ -27,6 +27,28 @@ setTimeout(() => {
 }, `dlay 시킬 초`);
 ```
 
+### 버튼 클릭으로 페이지 이동
+```java
+function handleClick(e) {
+  window.location.href = "/{페이지}";
+};
+```
+
+<br>
+
+---------------------
+
+<br>
+
+## HTML 관련
+
+### 오디오 넣기
+```html
+  <audio autoPlay="autoplay" loop>
+    <source src={maintheme} type="audio/mp3" />
+  </audio>
+```
+
 <br>
 
 ---------------------
