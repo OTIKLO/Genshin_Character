@@ -239,6 +239,59 @@ function Main(){
 ...
 }
 ```
+### 스크롤 페이지 점 표시 -> 이미지 표시
+
+```javascript
+  <Dots scrollIndex={scrollIndex} />
+---------------------------------------
+import doff from "../img/icon/Dot_off.png"; //이미지 off
+import don from "../img/icon/Dot_on.png"    //이미지 on
+
+const Dot = ({ num, scrollIndex }) => {   // 점 자체의 꺼짐, 켜짐
+  let dsrc = doff;
+  if (scrollIndex === num) {
+    dsrc = don;
+  } else {
+    dsrc = doff;
+  }
+  return (
+    <div style={{
+      width: 10,
+      height: 10,
+      transitionDuration: 1000,
+      transition: "background-color 0.5s",
+    }}>
+      <img src={dsrc} alt="img"></img>
+    </div>
+  );
+};
+
+const Dots = ({ scrollIndex }) => {     // 점들을 배치
+  return (
+    <div style={{ position: "fixed", top: "35%", right: 100 }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: 20,
+          height: 300,
+        }}
+      >
+        <Dot num={1} scrollIndex={scrollIndex}></Dot>   //페이지 만큼 
+        <Dot num={2} scrollIndex={scrollIndex}></Dot>
+        <Dot num={3} scrollIndex={scrollIndex}></Dot>
+        <Dot num={4} scrollIndex={scrollIndex}></Dot>
+      </div>
+    </div>
+  );
+};
+
+export default Dots;
+
+```
+
 
 ### 페이지를 볼 때 애니메이션 작동
 
@@ -266,8 +319,33 @@ function Main(){
   const divList = document.querySelectorAll('div, .AF');
 
   divList.forEach(el => observer.observe(el));
+```
 
-  const [musics, setMusics] = useState(true);
+```html
+  <div ref={outerDivRef} className="outer">
+    <Dots scrollIndex={scrollIndex} />
+    <div className="inner bg1">
+    
+    </div>
+    <div className="divider"></div>
+    <div className="inner bg2">
+    
+    </div>
+    <div className="divider"></div>
+    <div className="inner bg3">
+    
+    </div>
+    <div className="divider"></div>
+    <div className="inner bg4">
+    
+    </div>
+  </div>
+```
+
+### 배경 소리 음소거
+
+```javascript
+const [musics, setMusics] = useState(true);
   let mbtn = mon;
   function muteOnClick() {
       const music = document.querySelector(".music");
