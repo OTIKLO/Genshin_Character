@@ -214,13 +214,65 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .ccselect{
     margin-left: 20px;
-    height:40px;
+    height:45px;
     font-size: 18px;
     border-radius: 10px;
-    background-color: #B1B2FF;
+    font-weight: 600;
+    border-color: white;
+    background-color: #25316D;
+    color:#D2DAFF;
 }
 .ccselect option:checked,
 .ccselect option:hover {
 background: #D2DAFF;
-font-weight: 600;
+color:black;
+}
+.SHdiv{
+    display: grid;
+    width: 85%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+.SHLeftdiv{
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 10% 25% 25% 25%;
+    text-align: center;
+}
+.SHRightdiv{
+    overflow: hidden;
+    width:100%;
+    display: grid;
+    grid-template-rows: 10% 25% 25% 25%;
+}
+.SHchdiv{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.SHskdiv{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.SHimg {
+    max-width: 100%;
+    max-height: 100%;
+}
+.SHcimg {
+    max-width: 50%;
+    max-height: 50%;
+}
+.shselect{
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: center;
+    height:60px;
+    font-size: 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    border-color: white;
+    background-color: #25316D;
+    color:#D2DAFF;
 }

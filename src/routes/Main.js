@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Dots from "../element/Dots.js";
 import ArtifactForm from "../element/ArtifactForm";
 import CharacterCal from "../element/CharacterCal";
+import SkillShow from "../element/SkillShow";
 import "./Main.css";
 import maintheme from "../music/PhantasmSuite.mp3";
 import img1 from "../img/character/raiden.webp";
@@ -183,7 +184,9 @@ function Main() {
           <CharacterCal />
       </div>
       <div className="divider"></div>
-      <div className="inner bg4">4</div>
+      <div className="inner bg4">
+          <SkillShow />
+      </div>
     </div>
   );
 }

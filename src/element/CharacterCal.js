@@ -928,6 +928,439 @@ function charchange(character){
         stuff3 = slime3;
         gem_wind();
     }
+    else if (character === "진") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "소") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "설탕") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "카즈하") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "사유") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "헤이조") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "모나") {      //물
+        art = venti;
+        gathering = g_ph;
+        boss = b_wa;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_water();
+    } else if (character === "타르탈리아") {
+            art = venti;
+            gathering = g_ce;
+            boss = b_wa;
+            stuff1 = slime1;
+            stuff2 = slime2;
+            stuff3 = slime3;
+            gem_water();
+    } else if (character === "행추") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wa;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_water();
+    } else if (character === "코코미") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_water();
+    } else if (character === "아야토") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_water();
+    } else if (character === "야란") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_water();
+    } else if (character === "닐루") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_water();
+    } else if (character === "캔디스") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_water();
+    } else if (character === "다이루크") {  //불
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "클레") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "호두") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "베넷") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "향릉") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "엠버") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "신염") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "연비") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "요이미야") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = scroll1;
+        stuff2 = scroll2;
+        stuff3 = scroll3;
+        gem_wind();
+    } else if (character === "토마") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "치치") {  //얼음
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = scroll1;
+        stuff2 = scroll2;
+        stuff3 = scroll3;
+        gem_wind();
+    } else if (character === "감우") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "유라") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "중운") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "디오나") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "케이아") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "로자리아") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "아야카") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "에일로이") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "신학") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "각청") {      //번개
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "피슬") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "북두") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "레이저") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "리사") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "라이덴") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "사라") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "미코") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "시노부") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "도리") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "사이노") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "종려") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "알베도") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = scroll1;
+        stuff2 = scroll2;
+        stuff3 = scroll3;
+        gem_wind();
+    } else if (character === "응광") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "노엘") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "이토") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "고로") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "운근") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "타이나리") {      //풀
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    } else if (character === "콜레이") {
+        art = venti;
+        gathering = g_ce;
+        boss = b_wc;
+        stuff1 = slime1;
+        stuff2 = slime2;
+        stuff3 = slime3;
+        gem_wind();
+    }
 }
 function CharacterCal() {
     const [level, setLevel] = useState({
@@ -936,10 +1369,9 @@ function CharacterCal() {
     });
     const [character, setCharacter] = useState("바바라");
     const handleSelectChange = (e) => {
-        if(1===1){
-            setCharacter(e.target.value);
-        }
-        charchange(character);
+        console.log(e.target.value);
+        setCharacter(e.target.value);
+        charchange(e.target.value);
     };
     const handleInputChange1 = (e) => {
         if (e.target.value >= 0 && e.target.value <= 90) {
@@ -1011,79 +1443,79 @@ function CharacterCal() {
             </div>
             <div className="CCRightdiv">
                 <div>
+                <h1 style={{ marginTop:"-5px", fontSize: "40px", color: "#B1B2FF" }}>육성 계산기</h1>
                     <select id="Char" onChange={handleSelectChange} value={character} className="ccselect">
                         <optgroup label="바람">
                             <option value="벤티">벤티</option>
-                            <option>진</option>
-                            <option>소</option>
-                            <option>설탕</option>
-                            <option>카에데하라 카즈하</option>
-                            <option>사유</option>
-                            <option>시카노인 헤이조</option>
+                            <option value="진">진</option>
+                            <option value="소">소</option>
+                            <option value="설탕">설탕</option>
+                            <option value="카즈하">카에데하라 카즈하</option>
+                            <option value="사유">사유</option>
+                            <option value="헤이조">시카노인 헤이조</option>
                         </optgroup>
                         <optgroup label="물">
-                            <option>타르탈리아</option>
-                            <option>모나</option>
-                            <option>행추</option>
+                            <option value="타르탈리아">타르탈리아</option>
+                            <option value="모나">모나</option>
+                            <option value="행추">행추</option>
                             <option value="바바라">바바라</option>
-                            <option>산고노미야 코코미</option>
-                            <option>카미사토 아야토</option>
-                            <option>야란</option>
-                            <option>닐루</option>
-                            <option>캔디스</option>
+                            <option value="코코미">산고노미야 코코미</option>
+                            <option value="아야토">카미사토 아야토</option>
+                            <option value="야란">야란</option>
+                            <option value="닐루">닐루</option>
+                            <option value="캔디스">캔디스</option>
                         </optgroup>
                         <optgroup label="불">
-                            <option>다이루크</option>
-                            <option>클레</option>
-                            <option>호두</option>
-                            <option>베넷</option>
-                            <option>향릉</option>
-                            <option>엠버</option>
-                            <option>신염</option>
-                            <option>연비</option>
-                            <option>요이미야</option>
-                            <option>토마</option>
+                            <option value="다이루크">다이루크</option>
+                            <option value="클레">클레</option>
+                            <option value="호두">호두</option>
+                            <option value="베넷">베넷</option>
+                            <option value="향릉">향릉</option>
+                            <option value="엠버">엠버</option>
+                            <option value="신염">신염</option>
+                            <option value="연비">연비</option>
+                            <option value="요이미야">요이미야</option>
+                            <option value="토마">토마</option>
                         </optgroup>
                         <optgroup label="얼음">
-                            <option>치치</option>
-                            <option>감우</option>
-                            <option>유라</option>
-                            <option>중운</option>
-                            <option>디오나</option>
-                            <option>케이아</option>
-                            <option>로자리아</option>
-                            <option>카미사토 아야카</option>
-                            <option>에일로이</option>
-                            <option>신학</option>
+                            <option value="치치">치치</option>
+                            <option value="감우">감우</option>
+                            <option value="유라">유라</option>
+                            <option value="중운">중운</option>
+                            <option value="디오나">디오나</option>
+                            <option value="케이아">케이아</option>
+                            <option value="로자리아">로자리아</option>
+                            <option value="아야카">카미사토 아야카</option>
+                            <option value="에일로이">에일로이</option>
+                            <option value="신학">신학</option>
                         </optgroup>
                         <optgroup label="번개">
-                            <option>각청</option>
-                            <option>피슬</option>
-                            <option>북두</option>
-                            <option>레이저</option>
-                            <option>리사</option>
-                            <option>라이덴 쇼군</option>
-                            <option>쿠죠 사라</option>
-                            <option>야에 미코</option>
-                            <option>쿠키 시노부</option>
-                            <option>도리</option>
-                            <option>사이노</option>
+                            <option value="각청">각청</option>
+                            <option value="피슬">피슬</option>
+                            <option value="북두">북두</option>
+                            <option value="레이저">레이저</option>
+                            <option value="리사">리사</option>
+                            <option value="라이덴">라이덴 쇼군</option>
+                            <option value="사라">쿠죠 사라</option>
+                            <option value="미코">야에 미코</option>
+                            <option value="시노부">쿠키 시노부</option>
+                            <option value="도리">도리</option>
+                            <option value="사이노">사이노</option>
                         </optgroup>
                         <optgroup label="바위">
-                            <option>종려</option>
-                            <option>알베도</option>
-                            <option>응광</option>
-                            <option>노엘</option>
-                            <option>아라타키 이토</option>
-                            <option>고로</option>
-                            <option>운근</option>
+                            <option value="종려">종려</option>
+                            <option value="알베도">알베도</option>
+                            <option value="응광">응광</option>
+                            <option value="노엘">노엘</option>
+                            <option value="이토">아라타키 이토</option>
+                            <option value="고로">고로</option>
+                            <option value="운근">운근</option>
                         </optgroup>
                         <optgroup label="풀">
-                            <option>타이나리</option>
-                            <option>콜레이</option>
+                            <option value="타이나리">타이나리</option>
+                            <option value="콜레이">콜레이</option>
                         </optgroup>
                     </select>
-                    <button className="ccSelectbtn">선택</button>
                 </div>
                 <div className="CCLevels">
                     <p className="cccP">레벨: </p>
