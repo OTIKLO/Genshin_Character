@@ -248,10 +248,6 @@ function calculator(slv, elv) {
         smora = 2630;
         sexp = 1;
         s1_20();
-    } else if (slv === 12) {
-        smora = 2630;
-        sexp = 1;
-        s1_20();
     } else if (slv === 13) {
         smora = 4075;
         sexp = 2;
