@@ -105,19 +105,19 @@ import arrowhead2 from "./icon/stuff/Arrowhead2.png";
 import arrowhead3 from "./icon/stuff/Arrowhead3.png";
 
 //보석
-import water1 from "./icon/gem/water1.png";
+import water1 from "./icon/gem/water1.png"; //물
 import water2 from "./icon/gem/water2.png";
 import water3 from "./icon/gem/water3.png";
 import water4 from "./icon/gem/water4.png";
-import wind1 from "./icon/gem/wind1.png";
+import wind1 from "./icon/gem/wind1.png";   //바람
 import wind2 from "./icon/gem/wind2.png";
 import wind3 from "./icon/gem/wind3.png";
 import wind4 from "./icon/gem/wind4.png";
-import fire1 from "./icon/gem/fire1.png";
+import fire1 from "./icon/gem/fire1.png";   //불
 import fire2 from "./icon/gem/fire2.png";
 import fire3 from "./icon/gem/fire3.png";
 import fire4 from "./icon/gem/fire4.png";
-import ice1 from "./icon/gem/ice1.png";
+import ice1 from "./icon/gem/ice1.png";     //얼음
 import ice2 from "./icon/gem/ice2.png";
 import ice3 from "./icon/gem/ice3.png";
 import ice4 from "./icon/gem/ice4.png";
