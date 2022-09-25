@@ -47,6 +47,13 @@ import sara from "./cc/babara/sara.png";
 import miko from "./cc/babara/miko.png";
 import shinobu from "./cc/babara/shinobu.png";
 import dori from "./cc/babara/dori.png";
+import zhongli from "./cc/babara/zhongli.png";
+import albedo from "./cc/babara/albedo.png";
+import ningguang from "./cc/babara/ningguang.png";
+import noelle from "./cc/babara/noelle.png";
+import itto from "./cc/babara/itto.png";
+import gorou from "./cc/babara/gorou.png";
+import yunjin from "./cc/babara/yunjin.png";
 
 //채집재료
 import g_ph from "./icon/gathering/Philanemo.png";
@@ -74,7 +81,7 @@ import g_wh from "./icon/gathering/Wolfhook.png";
 import g_af from "./icon/gathering/AmakumoFruit.png";
 import g_de from "./icon/gathering/Dendrobium.png";
 import g_ne from "./icon/gathering/Nelumbo.png";
-
+import g_gl from "./icon/gathering/GlazeLily.png";
 
 //보스
 import b_wa from "./icon/boss/boss_water1.png";
@@ -92,6 +99,8 @@ import b_dff from "./icon/boss/boss_DragonheirsFalseFin.png";
 import b_lp from "./icon/boss/boss_LightningPrism.png";
 import b_sb from "./icon/boss/boss_StormBeads.png";
 import b_cw from "./icon/boss/boss_CyroWood.png";
+import b_bp from "./icon/boss/boss_BasaltPillar.png";
+import b_rr from "./icon/boss/boss_RiftbornRegalia.png";
 
 //재료
 import scroll1 from "./icon/stuff/Scroll1.png";
@@ -146,6 +155,10 @@ import cyro1 from "./icon/gem/cyro1.png";     //번개
 import cyro2 from "./icon/gem/cyro2.png";
 import cyro3 from "./icon/gem/cyro3.png";
 import cyro4 from "./icon/gem/cyro4.png";
+import prithiva1 from "./icon/gem/Prithiva1.png";       //바위
+import prithiva2 from "./icon/gem/Prithiva2.png";
+import prithiva3 from "./icon/gem/Prithiva3.png";
+import prithiva4 from "./icon/gem/Prithiva4.png";
 
 // 사진 관련
 let art = babaraart;
@@ -1039,6 +1052,12 @@ function gem_cyro() {
     gem3 = cyro3;
     gem4 = cyro4;
 };
+function gem_prithiva() {
+    gem1 = prithiva1;
+    gem2 = prithiva2;
+    gem3 = prithiva3;
+    gem4 = prithiva4;
+};
 function charchange(character){
     console.log(character);
     if (character === "바바라") {
@@ -1419,61 +1438,61 @@ function charchange(character){
         stuff3 = slime3;
         gem_cyro();
     } else if (character === "종려") {      //바위
-        art = venti;
-        gathering = g_ce;
-        boss = b_wc;
+        art = zhongli;
+        gathering = g_cl;
+        boss = b_bp;
         stuff1 = slime1;
         stuff2 = slime2;
         stuff3 = slime3;
-        gem_wind();
+        gem_prithiva();
     } else if (character === "알베도") {
-        art = venti;
+        art = albedo;
         gathering = g_ce;
-        boss = b_wc;
+        boss = b_bp;
         stuff1 = scroll1;
         stuff2 = scroll2;
         stuff3 = scroll3;
-        gem_wind();
+        gem_prithiva();
     } else if (character === "응광") {
-        art = venti;
-        gathering = g_ce;
-        boss = b_wc;
-        stuff1 = slime1;
-        stuff2 = slime2;
-        stuff3 = slime3;
-        gem_wind();
+        art = ningguang;
+        gathering = g_gl;
+        boss = b_bp;
+        stuff1 = sinsignia1;
+        stuff2 = sinsignia2;
+        stuff3 = sinsignia3;
+        gem_prithiva();
     } else if (character === "노엘") {
-        art = venti;
-        gathering = g_ce;
-        boss = b_wc;
-        stuff1 = slime1;
-        stuff2 = slime2;
-        stuff3 = slime3;
-        gem_wind();
+        art = noelle;
+        gathering = g_va;
+        boss = b_bp;
+        stuff1 = mask1;
+        stuff2 = mask2;
+        stuff3 = mask3;
+        gem_prithiva();
     } else if (character === "이토") {
-        art = venti;
-        gathering = g_ce;
-        boss = b_wc;
+        art = itto;
+        gathering = g_on;
+        boss = b_rr;
         stuff1 = slime1;
         stuff2 = slime2;
         stuff3 = slime3;
-        gem_wind();
+        gem_prithiva();
     } else if (character === "고로") {
-        art = venti;
-        gathering = g_ce;
-        boss = b_wc;
-        stuff1 = slime1;
-        stuff2 = slime2;
-        stuff3 = slime3;
-        gem_wind();
+        art = gorou;
+        gathering = g_sp;
+        boss = b_ph;
+        stuff1 = spectral1;
+        stuff2 = spectral2;
+        stuff3 = spectral3;
+        gem_prithiva();
     } else if (character === "운근") {
-        art = venti;
-        gathering = g_ce;
-        boss = b_wc;
-        stuff1 = slime1;
-        stuff2 = slime2;
-        stuff3 = slime3;
-        gem_wind();
+        art = yunjin;
+        gathering = g_gl;
+        boss = b_rr;
+        stuff1 = mask1;
+        stuff2 = mask2;
+        stuff3 = mask3;
+        gem_prithiva();
     } else if (character === "타이나리") {      //풀
         art = venti;
         gathering = g_ce;
