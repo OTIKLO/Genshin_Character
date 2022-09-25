@@ -42,6 +42,11 @@ import fischl from "./cc/babara/fischl.png";
 import beidou from "./cc/babara/beidou.png";
 import razor from "./cc/babara/razor.png";
 import lisa from "./cc/babara/lisa.png";
+import raiden from "./cc/babara/raiden.png";
+import sara from "./cc/babara/sara.png";
+import miko from "./cc/babara/miko.png";
+import shinobu from "./cc/babara/shinobu.png";
+import dori from "./cc/babara/dori.png";
 
 //채집재료
 import g_ph from "./icon/gathering/Philanemo.png";
@@ -66,6 +71,10 @@ import g_cl from "./icon/gathering/CorLapis.png";
 import g_cal from "./icon/gathering/CallaLily.png";
 import g_va from "./icon/gathering/Valberry.png";
 import g_wh from "./icon/gathering/Wolfhook.png";
+import g_af from "./icon/gathering/AmakumoFruit.png";
+import g_de from "./icon/gathering/Dendrobium.png";
+import g_ne from "./icon/gathering/Nelumbo.png";
+
 
 //보스
 import b_wa from "./icon/boss/boss_water1.png";
@@ -81,6 +90,8 @@ import b_cb from "./icon/boss/boss_CrystallineBloom.png";
 import b_ph from "./icon/boss/boss_PerpetualHeart.png";
 import b_dff from "./icon/boss/boss_DragonheirsFalseFin.png";
 import b_lp from "./icon/boss/boss_LightningPrism.png";
+import b_sb from "./icon/boss/boss_StormBeads.png";
+import b_cw from "./icon/boss/boss_CyroWood.png";
 
 //재료
 import scroll1 from "./icon/stuff/Scroll1.png";
@@ -110,6 +121,9 @@ import handguard3 from "./icon/stuff/Handguard3.png";
 import arrowhead1 from "./icon/stuff/Arrowhead1.png";
 import arrowhead2 from "./icon/stuff/Arrowhead2.png";
 import arrowhead3 from "./icon/stuff/Arrowhead3.png";
+import platingbrigade1 from "./icon/stuff/platingbrigade1.png";
+import platingbrigade2 from "./icon/stuff/platingbrigade2.png";
+import platingbrigade3 from "./icon/stuff/platingbrigade3.png";
 
 //보석
 import water1 from "./icon/gem/water1.png"; //물
@@ -1357,44 +1371,44 @@ function charchange(character){
         stuff3 = slime3;
         gem_cyro();
     } else if (character === "라이덴") {
-        art = venti;
-        gathering = g_ce;
-        boss = b_wc;
-        stuff1 = slime1;
-        stuff2 = slime2;
-        stuff3 = slime3;
+        art = raiden;
+        gathering = g_af;
+        boss = b_sb;
+        stuff1 = handguard1;
+        stuff2 = handguard2;
+        stuff3 = handguard3;
         gem_cyro();
     } else if (character === "사라") {
-        art = venti;
-        gathering = g_ce;
-        boss = b_wc;
-        stuff1 = slime1;
-        stuff2 = slime2;
-        stuff3 = slime3;
+        art = sara;
+        gathering = g_de;
+        boss = b_sb;
+        stuff1 = mask1;
+        stuff2 = mask2;
+        stuff3 = mask3;
         gem_cyro();
     } else if (character === "미코") {
-        art = venti;
-        gathering = g_ce;
-        boss = b_wc;
-        stuff1 = slime1;
-        stuff2 = slime2;
-        stuff3 = slime3;
+        art = miko;
+        gathering = g_sg;
+        boss = b_dff;
+        stuff1 = handguard1;
+        stuff2 = handguard2;
+        stuff3 = handguard3;
         gem_cyro();
     } else if (character === "시노부") {
-        art = venti;
-        gathering = g_ce;
-        boss = b_wc;
-        stuff1 = slime1;
-        stuff2 = slime2;
-        stuff3 = slime3;
+        art = shinobu;
+        gathering = g_nw;
+        boss = b_rf;
+        stuff1 = spectral1;
+        stuff2 = spectral2;
+        stuff3 = spectral3;
         gem_cyro();
     } else if (character === "도리") {
-        art = venti;
-        gathering = g_ce;
-        boss = b_wc;
-        stuff1 = slime1;
-        stuff2 = slime2;
-        stuff3 = slime3;
+        art = dori;
+        gathering = g_ne;
+        boss = b_cw;
+        stuff1 = platingbrigade1;
+        stuff2 = platingbrigade2;
+        stuff3 = platingbrigade3;
         gem_cyro();
     } else if (character === "사이노") {
         art = venti;
