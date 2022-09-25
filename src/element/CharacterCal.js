@@ -54,6 +54,8 @@ import noelle from "./cc/babara/noelle.png";
 import itto from "./cc/babara/itto.png";
 import gorou from "./cc/babara/gorou.png";
 import yunjin from "./cc/babara/yunjin.png";
+import tignari from "./cc/babara/tignari.png";
+import collei from "./cc/babara/collei.png";
 
 //채집재료
 import g_ph from "./icon/gathering/Philanemo.png";
@@ -82,6 +84,8 @@ import g_af from "./icon/gathering/AmakumoFruit.png";
 import g_de from "./icon/gathering/Dendrobium.png";
 import g_ne from "./icon/gathering/Nelumbo.png";
 import g_gl from "./icon/gathering/GlazeLily.png";
+import g_mn from "./icon/gathering/MoonNelumbo.png";
+import g_lam from "./icon/gathering/LukkadevataAdultMushrooms.png";
 
 //보스
 import b_wa from "./icon/boss/boss_water1.png";
@@ -101,6 +105,7 @@ import b_sb from "./icon/boss/boss_StormBeads.png";
 import b_cw from "./icon/boss/boss_CyroWood.png";
 import b_bp from "./icon/boss/boss_BasaltPillar.png";
 import b_rr from "./icon/boss/boss_RiftbornRegalia.png";
+import b_mu from "./icon/boss/boss_mushroom.png";
 
 //재료
 import scroll1 from "./icon/stuff/Scroll1.png";
@@ -133,6 +138,9 @@ import arrowhead3 from "./icon/stuff/Arrowhead3.png";
 import platingbrigade1 from "./icon/stuff/platingbrigade1.png";
 import platingbrigade2 from "./icon/stuff/platingbrigade2.png";
 import platingbrigade3 from "./icon/stuff/platingbrigade3.png";
+import pore1 from "./icon/stuff/pore1.png";
+import pore2 from "./icon/stuff/pore2.png";
+import pore3 from "./icon/stuff/pore3.png";
 
 //보석
 import water1 from "./icon/gem/water1.png"; //물
@@ -159,6 +167,10 @@ import prithiva1 from "./icon/gem/Prithiva1.png";       //바위
 import prithiva2 from "./icon/gem/Prithiva2.png";
 import prithiva3 from "./icon/gem/Prithiva3.png";
 import prithiva4 from "./icon/gem/Prithiva4.png";
+import dendro1 from "./icon/gem/dendro1.png";       //풀
+import dendro2 from "./icon/gem/dendro2.png";
+import dendro3 from "./icon/gem/dendro3.png";
+import dendro4 from "./icon/gem/dendro4.png";
 
 // 사진 관련
 let art = babaraart;
@@ -1058,6 +1070,12 @@ function gem_prithiva() {
     gem3 = prithiva3;
     gem4 = prithiva4;
 };
+function gem_dendro() {
+    gem1 = dendro1;
+    gem2 = dendro2;
+    gem3 = dendro3;
+    gem4 = dendro4;
+};
 function charchange(character){
     console.log(character);
     if (character === "바바라") {
@@ -1494,21 +1512,21 @@ function charchange(character){
         stuff3 = mask3;
         gem_prithiva();
     } else if (character === "타이나리") {      //풀
-        art = venti;
-        gathering = g_ce;
-        boss = b_wc;
-        stuff1 = slime1;
-        stuff2 = slime2;
-        stuff3 = slime3;
-        gem_wind();
+        art = tignari;
+        gathering = g_mn;
+        boss = b_mu;
+        stuff1 = pore1;
+        stuff2 = pore2;
+        stuff3 = pore3;
+        gem_dendro();
     } else if (character === "콜레이") {
-        art = venti;
-        gathering = g_ce;
-        boss = b_wc;
-        stuff1 = slime1;
-        stuff2 = slime2;
-        stuff3 = slime3;
-        gem_wind();
+        art = collei;
+        gathering = g_lam;
+        boss = b_mu;
+        stuff1 = arrowhead1;
+        stuff2 = arrowhead2;
+        stuff3 = arrowhead3;
+        gem_dendro();
     }
 }
 function CharacterCal() {
