@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Genshin_Character/static/css/main.b62109a5.css",
-    "main.js": "/Genshin_Character/static/js/main.03a13670.js",
+    "main.js": "/Genshin_Character/static/js/main.db666181.js",
     "static/media/GBG.mp4": "/Genshin_Character/static/media/GBG.5126713363666001f8ff.mp4",
     "static/media/screen.mp4": "/Genshin_Character/static/media/screen.e54aaaaff27e5317c99c.mp4",
     "static/media/PhantasmSuite.mp3": "/Genshin_Character/static/media/PhantasmSuite.b1532e3fe330ce65c849.mp3",
@@ -181,10 +181,10 @@
     "static/media/Diligence1.png": "/Genshin_Character/static/media/Diligence1.8c5ae6ce328499a9a613.png",
     "index.html": "/Genshin_Character/index.html",
     "main.b62109a5.css.map": "/Genshin_Character/static/css/main.b62109a5.css.map",
-    "main.03a13670.js.map": "/Genshin_Character/static/js/main.03a13670.js.map"
+    "main.db666181.js.map": "/Genshin_Character/static/js/main.db666181.js.map"
   },
   "entrypoints": [
     "static/css/main.b62109a5.css",
-    "static/js/main.03a13670.js"
+    "static/js/main.db666181.js"
   ]
 }
