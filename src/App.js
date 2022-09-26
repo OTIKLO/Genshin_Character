@@ -12,9 +12,9 @@ function App() {
   return (
   <Router>
     <Routes>
-      <Route path="/" element={<Startloading />} />
-      <Route path="/Welcome" element={<Welcome />} />
-      <Route path="/Main" element={<Main />} />
+      <Route path="/Genshin_Character" element={<Startloading />} />
+      <Route path="/Genshin_Character/Welcome" element={<Welcome />} />
+      <Route path="/Genshin_Character/Main" element={<Main />} />
     </Routes>
   </Router>
   

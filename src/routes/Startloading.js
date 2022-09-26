@@ -5,7 +5,7 @@ import loadingbg from "../img/bg/loading.jpg";
 
 function Startloading() {
     useEffect(() => {
-        setTimeout(() => { window.location.href = "/Welcome"; clearTimeout()}, 5000);
+        setTimeout(() => { window.location.href = "/Genshin_Character/Welcome"; clearTimeout()}, 5000);
     });
     return (
         <div className="fadeindiv">

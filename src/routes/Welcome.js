@@ -8,7 +8,7 @@ import maintheme from "../music/g_main_theme.mp3";
 
 function Welcome() {
     function handleClick(e) {
-        window.location.href = "/Main";
+        window.location.href = "/Genshin_Character/Main";
     };
     return (
         <div className="fadeindiv">
