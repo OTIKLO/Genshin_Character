@@ -2,6 +2,19 @@
 
 개인적인 학습을 위해 즐겨 하는 게임인 원신을 배경으로 사이트를 개발해 보고 있습니다.
 
+## 성유물 점수 계산기
+
+![gc_1](https://user-images.githubusercontent.com/112360600/192196493-434c355f-6717-4187-aad3-dd87940ba764.PNG)
+
+## 육성 계산기
+
+![gc_2](https://user-images.githubusercontent.com/112360600/192196504-57ede1d6-e7a6-4c55-9c09-18aeab23b51b.PNG)
+
+## 특성
+
+![gc_3](https://user-images.githubusercontent.com/112360600/192196509-6ed9069b-864b-4759-a558-78ea69d6b10b.PNG)
+
+
 ## 사용 언어
 <img src="https://img.shields.io/badge/Javascript-F3DD16?style=flat-square&logo=JavaScript&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a>
