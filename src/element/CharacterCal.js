@@ -85,7 +85,7 @@ import g_de from "./icon/gathering/Dendrobium.png";
 import g_ne from "./icon/gathering/Nelumbo.png";
 import g_gl from "./icon/gathering/GlazeLily.png";
 import g_mn from "./icon/gathering/MoonNelumbo.png";
-import g_lam from "./icon/gathering/LukkadevataAdultMushrooms.png";
+import g_lam from "./icon/gathering/LukkadevataAdultMushroom.png";
 
 //보스
 import b_wa from "./icon/boss/boss_water1.png";
@@ -1076,7 +1076,7 @@ function gem_dendro() {
     gem3 = dendro3;
     gem4 = dendro4;
 };
-function charchange(character){
+function charchange(character) {
     console.log(character);
     if (character === "바바라") {
         art = babaraart;
@@ -1152,13 +1152,13 @@ function charchange(character){
         stuff3 = nectar3;
         gem_water();
     } else if (character === "타르탈리아") {
-            art = tartaglia;
-            gathering = g_st;
-            boss = b_wa;
-            stuff1 = sinsignia1;
-            stuff2 = sinsignia2;
-            stuff3 = sinsignia3;
-            gem_water();
+        art = tartaglia;
+        gathering = g_st;
+        boss = b_wa;
+        stuff1 = sinsignia1;
+        stuff2 = sinsignia2;
+        stuff3 = sinsignia3;
+        gem_water();
     } else if (character === "행추") {
         art = xingqiu;
         gathering = g_sf;
@@ -1610,7 +1610,7 @@ function CharacterCal() {
             </div>
             <div className="CCRightdiv">
                 <div>
-                <h1 style={{ marginTop:"-5px", fontSize: "40px", color: "#B1B2FF" }}>육성 계산기</h1>
+                    <h1 style={{ marginTop: "-5px", fontSize: "40px", color: "#B1B2FF" }}>육성 계산기</h1>
                     <select id="Char" onChange={handleSelectChange} value={character} className="ccselect">
                         <optgroup label="바람">
                             <option value="벤티">벤티</option>

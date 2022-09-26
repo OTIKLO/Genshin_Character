@@ -1,18 +1,53 @@
-import Ballad1 from "./icon/skillbook/Ballad1.png";
-import Ballad2 from "./icon/skillbook/Ballad2.png";
-import Ballad3 from "./icon/skillbook/Ballad3.png";
 import { useState } from "react";
+import Fr1 from "./Skill/skillbook/Freedom1.png";        //몬드
+import Fr2 from "./Skill/skillbook/Freedom2.png";
+import Fr3 from "./Skill/skillbook/Freedom3.png";
+import Re1 from "./Skill/skillbook/Resistance1.png";
+import Re2 from "./Skill/skillbook/Resistance2.png";
+import Re3 from "./Skill/skillbook/Resistance3.png";
+import Ba1 from "./Skill/skillbook/Ballad1.png";
+import Ba2 from "./Skill/skillbook/Ballad2.png";
+import Ba3 from "./Skill/skillbook/Ballad3.png";
+import Pr1 from "./Skill/skillbook/Prosperity1.png";        //리월
+import Pr2 from "./Skill/skillbook/Prosperity2.png";
+import Pr3 from "./Skill/skillbook/Prosperity3.png";
+import Di1 from "./Skill/skillbook/Diligence1.png";
+import Di2 from "./Skill/skillbook/Diligence2.png";
+import Di3 from "./Skill/skillbook/Diligence3.png";
+import Go1 from "./Skill/skillbook/Gold1.png";
+import Go2 from "./Skill/skillbook/Gold2.png";
+import Go3 from "./Skill/skillbook/Gold3.png";
+import Tr1 from "./Skill/skillbook/Transience1.png";      //이나즈마
+import Tr2 from "./Skill/skillbook/Transience2.png";
+import Tr3 from "./Skill/skillbook/Transience3.png";
+import El1 from "./Skill/skillbook/Elegance1.png";
+import El2 from "./Skill/skillbook/Elegance2.png";
+import El3 from "./Skill/skillbook/Elegance3.png";
+import Li1 from "./Skill/skillbook/Light1.png";
+import Li2 from "./Skill/skillbook/Light2.png";
+import Li3 from "./Skill/skillbook/Light3.png";
+import Ad1 from "./Skill/skillbook/Advice1.png";         //수메르
+import Ad2 from "./Skill/skillbook/Advice2.png";
+import Ad3 from "./Skill/skillbook/Advice3.png";
+import Cr1 from "./Skill/skillbook/creative1.png";
+import Cr2 from "./Skill/skillbook/creative2.png";
+import Cr3 from "./Skill/skillbook/creative3.png";
+import Im1 from "./Skill/skillbook/Implement1.png";
+import Im2 from "./Skill/skillbook/Implement2.png";
+import Im3 from "./Skill/skillbook/Implement3.png";
+
 import tran from "./icon/skillbook/tran.png";
 
-let sk1_1 = Ballad1;
-let sk1_2 = Ballad2;
-let sk1_3 = Ballad3;
-let sk2_1 = Ballad1;
-let sk2_2 = Ballad1;
-let sk2_3 = Ballad1;
-let sk3_1 = Ballad1;
-let sk3_2 = Ballad1;
-let sk3_3 = Ballad1;
+
+let sk1_1 = Fr1;
+let sk1_2 = Fr2;
+let sk1_3 = Fr3;
+let sk2_1 = Re1;
+let sk2_2 = Re2;
+let sk2_3 = Re3;
+let sk3_1 = Ba1;
+let sk3_2 = Ba2;
+let sk3_3 = Ba3;
 let ch1_1 = tran;
 let ch1_2 = tran;
 let ch1_3 = tran;
@@ -54,15 +89,15 @@ let ch3_12 = tran;
 function imgchange(region){
     console.log(region);
     if (region === "몬드") {
-        sk1_1 = Ballad1;
-        sk1_2 = Ballad2;
-        sk1_3 = Ballad3;
-        sk2_1 = Ballad1;
-        sk2_2 = Ballad1;
-        sk2_3 = Ballad1;
-        sk3_1 = Ballad1;
-        sk3_2 = Ballad1;
-        sk3_3 = Ballad1;
+        sk1_1 = Fr1;
+        sk1_2 = Fr2;
+        sk1_3 = Fr3;
+        sk2_1 = Re1;
+        sk2_2 = Re2;
+        sk2_3 = Re3;
+        sk3_1 = Ba1;
+        sk3_2 = Ba2;
+        sk3_3 = Ba3;
         ch1_1 = tran;
         ch1_2 = tran;
         ch1_3 = tran;
@@ -100,15 +135,15 @@ function imgchange(region){
         ch3_11 = tran;
         ch3_12 = tran;
     } else if(region === "리월") {
-        sk1_1 = Ballad1;
-        sk1_2 = Ballad2;
-        sk1_3 = Ballad3;
-        sk2_1 = Ballad1;
-        sk2_2 = Ballad1;
-        sk2_3 = Ballad1;
-        sk3_1 = Ballad1;
-        sk3_2 = Ballad1;
-        sk3_3 = Ballad1;
+        sk1_1 = Pr1;
+        sk1_2 = Pr2;
+        sk1_3 = Pr3;
+        sk2_1 = Di1;
+        sk2_2 = Di2;
+        sk2_3 = Di3;
+        sk3_1 = Go1;
+        sk3_2 = Go2;
+        sk3_3 = Go3;
         ch1_1 = tran;
         ch1_2 = tran;
         ch1_3 = tran;
@@ -146,15 +181,15 @@ function imgchange(region){
         ch3_11 = tran;
         ch3_12 = tran;
     } else if(region === "이나즈마") {
-        sk1_1 = Ballad1;
-        sk1_2 = Ballad2;
-        sk1_3 = Ballad3;
-        sk2_1 = Ballad1;
-        sk2_2 = Ballad1;
-        sk2_3 = Ballad1;
-        sk3_1 = Ballad1;
-        sk3_2 = Ballad1;
-        sk3_3 = Ballad1;
+        sk1_1 = Tr1;
+        sk1_2 = Tr2;
+        sk1_3 = Tr3;
+        sk2_1 = El1;
+        sk2_2 = El2;
+        sk2_3 = El3;
+        sk3_1 = Li1;
+        sk3_2 = Li2;
+        sk3_3 = Li3;
         ch1_1 = tran;
         ch1_2 = tran;
         ch1_3 = tran;
@@ -192,15 +227,15 @@ function imgchange(region){
         ch3_11 = tran;
         ch3_12 = tran;
     } else if(region === "수메르") {
-        sk1_1 = Ballad1;
-        sk1_2 = Ballad2;
-        sk1_3 = Ballad3;
-        sk2_1 = Ballad1;
-        sk2_2 = Ballad1;
-        sk2_3 = Ballad1;
-        sk3_1 = Ballad1;
-        sk3_2 = Ballad1;
-        sk3_3 = Ballad1;
+        sk1_1 = Ad1;
+        sk1_2 = Ad2;
+        sk1_3 = Ad3;
+        sk2_1 = Cr1;
+        sk2_2 = Cr2;
+        sk2_3 = Cr3;
+        sk3_1 = Im1;
+        sk3_2 = Im2;
+        sk3_3 = Im3;
         ch1_1 = tran;
         ch1_2 = tran;
         ch1_3 = tran;
