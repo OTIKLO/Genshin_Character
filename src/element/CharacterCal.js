@@ -1450,10 +1450,10 @@ function charchange(character) {
     } else if (character === "사이노") {
         art = venti;
         gathering = g_ce;
-        boss = b_wc;
-        stuff1 = slime1;
-        stuff2 = slime2;
-        stuff3 = slime3;
+        boss = b_cw;
+        stuff1 = scroll1;
+        stuff2 = scroll2;
+        stuff3 = scroll3;
         gem_cyro();
     } else if (character === "종려") {      //바위
         art = zhongli;
