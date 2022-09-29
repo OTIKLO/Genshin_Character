@@ -1203,9 +1203,9 @@ function charchange(character) {
         art = venti;
         gathering = g_ce;
         boss = b_wc;
-        stuff1 = slime1;
-        stuff2 = slime2;
-        stuff3 = slime3;
+        stuff1 = platingbrigade1;
+        stuff2 = platingbrigade2;
+        stuff3 = platingbrigade3;
         gem_water();
     } else if (character === "다이루크") {  //불
         art = diluc;
