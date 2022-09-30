@@ -57,6 +57,7 @@ import yunjin from "./cc/babara/yunjin.png";
 import tignari from "./cc/babara/tignari.png";
 import collei from "./cc/babara/collei.png";
 import syno from "./cc/babara/syno.png";
+import candace from "./cc/babara/candace.png";
 
 //채집재료
 import g_ph from "./icon/gathering/Philanemo.png";
@@ -88,6 +89,7 @@ import g_gl from "./icon/gathering/GlazeLily.png";
 import g_mn from "./icon/gathering/MoonNelumbo.png";
 import g_lam from "./icon/gathering/LukkadevataAdultMushroom.png";
 import g_su from "./icon/gathering/sukarabe.png";
+import g_rb from "./icon/gathering/RedBean.png";
 
 //보스
 import b_wa from "./icon/boss/boss_water1.png";
@@ -108,6 +110,8 @@ import b_cw from "./icon/boss/boss_CyroWood.png";
 import b_bp from "./icon/boss/boss_BasaltPillar.png";
 import b_rr from "./icon/boss/boss_RiftbornRegalia.png";
 import b_mu from "./icon/boss/boss_mushroom.png";
+import b_ma from "./icon/boss/boss_matrix.png";
+
 
 //재료
 import scroll1 from "./icon/stuff/Scroll1.png";
@@ -1202,9 +1206,9 @@ function charchange(character) {
         stuff3 = slime3;
         gem_water();
     } else if (character === "캔디스") {
-        art = venti;
-        gathering = g_ce;
-        boss = b_wc;
+        art = candace;
+        gathering = g_rb;
+        boss = b_ma;
         stuff1 = platingbrigade1;
         stuff2 = platingbrigade2;
         stuff3 = platingbrigade3;
