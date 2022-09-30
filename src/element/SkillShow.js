@@ -85,6 +85,8 @@ import miko from "./Skill/icon/Miko_icon.png";
 import sayu from "./Skill/icon/Sayu_icon.png";
 import gorou from "./Skill/icon/Gorou_icon.png";
 import tignari from "./Skill/icon/Tignari_icon.png";          //간언
+import syno from "./Skill/icon/Syno_icon.png";
+import candace from "./Skill/icon/Candace_icon.png";
 import dori from "./Skill/icon/Dori_icon.png";              //창의
 import collei from "./Skill/icon/Collei_icon.png";          //실천
 
@@ -286,8 +288,8 @@ function imgchange(region){
         sk3_2 = Im2;
         sk3_3 = Im3;
         ch1_1 = tignari;
-        ch1_2 = tran;
-        ch1_3 = tran;
+        ch1_2 = syno;
+        ch1_3 = candace;
         ch1_4 = tran;
         ch1_5 = tran;
         ch1_6 = tran;
