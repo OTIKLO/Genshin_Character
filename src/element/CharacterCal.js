@@ -56,6 +56,7 @@ import gorou from "./cc/babara/gorou.png";
 import yunjin from "./cc/babara/yunjin.png";
 import tignari from "./cc/babara/tignari.png";
 import collei from "./cc/babara/collei.png";
+import syno from "./cc/babara/syno.png";
 
 //채집재료
 import g_ph from "./icon/gathering/Philanemo.png";
@@ -86,6 +87,7 @@ import g_ne from "./icon/gathering/Nelumbo.png";
 import g_gl from "./icon/gathering/GlazeLily.png";
 import g_mn from "./icon/gathering/MoonNelumbo.png";
 import g_lam from "./icon/gathering/LukkadevataAdultMushroom.png";
+import g_su from "./icon/gathering/sukarabe.png";
 
 //보스
 import b_wa from "./icon/boss/boss_water1.png";
@@ -1448,8 +1450,8 @@ function charchange(character) {
         stuff3 = platingbrigade3;
         gem_cyro();
     } else if (character === "사이노") {
-        art = venti;
-        gathering = g_ce;
+        art = syno;
+        gathering = g_su;
         boss = b_cw;
         stuff1 = scroll1;
         stuff2 = scroll2;
