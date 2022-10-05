@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "babel-plugin-transform-react-pug": "^7.0.1",
-    "nth-check" : " >=2.0.1 " 
+    "nth-check": " >=2.0.1 "
   },
   "homepage": "https://OTIKLO.github.io/Genshin_Character"
 }
