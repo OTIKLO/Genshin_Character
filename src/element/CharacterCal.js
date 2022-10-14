@@ -58,6 +58,7 @@ import tignari from "./cc/babara/tignari.png";
 import collei from "./cc/babara/collei.png";
 import syno from "./cc/babara/syno.png";
 import candace from "./cc/babara/candace.png";
+import nillou from "./cc/babara/nillou.png";
 
 //채집재료
 import g_ph from "./icon/gathering/Philanemo.png";
@@ -90,6 +91,7 @@ import g_mn from "./icon/gathering/MoonNelumbo.png";
 import g_lam from "./icon/gathering/LukkadevataAdultMushroom.png";
 import g_su from "./icon/gathering/sukarabe.png";
 import g_rb from "./icon/gathering/RedBean.png";
+import g_pa from "./icon/gathering/Padisara.png";
 
 //보스
 import b_wa from "./icon/boss/boss_water1.png";
@@ -111,6 +113,7 @@ import b_bp from "./icon/boss/boss_BasaltPillar.png";
 import b_rr from "./icon/boss/boss_RiftbornRegalia.png";
 import b_mu from "./icon/boss/boss_mushroom.png";
 import b_mat from "./icon/boss/boss_matrix.png";
+import b_dk from "./icon/boss/boss_drake.png";
 
 
 //재료
@@ -1199,11 +1202,11 @@ function charchange(character) {
         gem_water();
     } else if (character === "닐루") {
         art = venti;
-        gathering = g_ce;
-        boss = b_wc;
-        stuff1 = slime1;
-        stuff2 = slime2;
-        stuff3 = slime3;
+        gathering = g_pa;
+        boss = b_dk;
+        stuff1 = pore1;
+        stuff2 = pore2;
+        stuff3 = pore3;
         gem_water();
     } else if (character === "캔디스") {
         art = candace;
