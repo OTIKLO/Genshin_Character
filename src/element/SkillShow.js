@@ -89,6 +89,7 @@ import syno from "./Skill/icon/Syno_icon.png";
 import candace from "./Skill/icon/Candace_icon.png";
 import dori from "./Skill/icon/Dori_icon.png";              //창의
 import collei from "./Skill/icon/Collei_icon.png";          //실천
+import nillou from "./Skill/icon/Nillou_icon.png";
 
 let sk1_1 = Fr1;
 let sk1_2 = Fr2;
@@ -312,7 +313,7 @@ function imgchange(region){
         ch2_11 = tran;
         ch2_12 = tran;
         ch3_1 = collei;
-        ch3_2 = tran;
+        ch3_2 = nillou;
         ch3_3 = tran;
         ch3_4 = tran;
         ch3_5 = tran;
